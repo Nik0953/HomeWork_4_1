@@ -82,7 +82,7 @@ def refill(acc, hist):
     print('Внесение денежных средств')
     money_refilled = input_positiv()
     acc += money_refilled
-    txt = 'Внесено ' + str(money_refilled) +'. Текущий остаток: ' + str(acc)
+    txt = 'Внесено ' + str(money_refilled) + '. Текущий остаток: ' + str(acc)
     print(txt)
     history.append(txt)
     return acc, hist
@@ -111,7 +111,7 @@ def buy(acc, hist):
     sku = input('Введите название покупки: ')
 
     acc -= money_to_pay
-    txt = 'Покупка '+ sku + ' на сумму ' + str(money_to_pay) + '. Текущий остаток: ' + str(acc)
+    txt = 'Покупка ' + sku + ' на сумму ' + str(money_to_pay) + '. Текущий остаток: ' + str(acc)
     print(txt)
     history.append(txt)
     return acc, hist
